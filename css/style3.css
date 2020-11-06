@@ -1,0 +1,45 @@
+.Gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-areas: 
+    "a1 a2 s1"
+    "a1 a2 s2"
+    "a1 a2 s3"
+    "a1 a2 s4"
+    "a1 a2 s4"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 2px;
+}
+
+.aside1 {
+    grid-area: a1;
+    background: yellow;
+}
+
+.aside2 {
+    grid-area: a2;
+    background: tomato;
+}
+
+.section1 {
+    grid-area: s1;
+    background: turquoise;
+}
+
+.section2 {
+    grid-area: s2;
+    background: violet;
+}
+
+.section3 {
+    grid-area: s3;
+    background: wheat;
+}
+
+.section4 {
+    grid-area: s4;
+    background: springgreen;
+}

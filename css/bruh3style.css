@@ -1,0 +1,77 @@
+.Gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-areas: 
+  "as he he he he he"
+  "a1 a1 a1 a1 a1 a1"
+  "a3 a3 a3 a4 a5 a5"
+  "a3 a3 a3 a4 a5 a5"
+  "a6 a6 a7 a7 a8 a8"
+  "a6 a6 a7 a7 a8 a8"
+  "a6 a6 a6 a6 a9 a9"
+  "a6 a6 a6 a6 a9 a9"
+    ;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2px;
+}
+
+.header {
+    grid-area: he;
+    background: aliceblue;
+}
+
+.aside {
+    grid-area: as;
+    background: antiquewhite;
+}
+
+.article1 {
+    grid-area: a1;
+    background: aqua;
+}
+
+.article2 { 
+    grid-area: a2;
+    background: aquamarine;
+}
+
+.article3 {
+    grid-area: a3;
+    background: azure;
+}
+.article4 {
+    grid-area: a4;
+    background: beige;
+}
+
+.article5 {
+    grid-area: a5;
+    background: bisque;
+}
+
+.article6 {
+    grid-area: a6;
+    background: blanchedalmond;
+}
+
+.article7 {
+    grid-area: a7;
+    background: blue;
+}
+
+.article8 {
+    grid-area: a8;
+    background: blueviolet;
+}
+
+.article9 {
+    grid-area: a9;
+    background: brown;
+}
+
+
+
+
+

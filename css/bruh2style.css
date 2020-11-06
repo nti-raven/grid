@@ -1,0 +1,75 @@
+.Gridwrapper {
+    display: grid;
+    height: 100vw;
+    width: 100vw;
+    grid-template-areas: 
+    "he he he as"
+    "a1 a1 a1 as"
+    "a2 a2 a2 as"
+    "a3 a3 a3 a3"
+    "a4 a4 a4 a4"
+    "se a5 a5 a5"
+    "a6 a7 a7 a7"
+    "a6 fo fo fo"
+    ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2px;
+}
+
+.header {
+    grid-area: he;
+    background: aliceblue;
+}
+
+.aside {
+    grid-area: as;
+    background: blanchedalmond;
+}
+
+.article1 {
+    grid-area: a1;
+    background: antiquewhite;
+}
+
+.article2 {
+    grid-area: a2;
+    background: aqua;
+}
+
+.article3 {
+    grid-area: a3;
+    background: aquamarine;
+}
+
+.article4 {
+    grid-area: a4;
+    background: azure;
+}
+
+.article5 {
+    grid-area: a5;
+    background: beige;
+}
+
+.article6 {
+    grid-area: a6;
+    background: bisque;
+}
+
+.article7 {
+    grid-area: a7;
+    background: black;
+}
+
+.innergridwrapper {
+    grid-area: se;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;
+}
+
+.innerdiv {
+    background: blueviolet;
+}

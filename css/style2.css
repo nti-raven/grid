@@ -1,0 +1,58 @@
+.Gridwrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vw;
+    grid-template-areas: 
+    "he he na"
+    "a1 a1 a1"
+    "se se as"
+    "se se as"
+    "fo fo fo"
+    ;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-gap: 2px;
+}
+
+.header {
+    grid-area: he;
+    background: red;
+}
+
+.nav {
+    grid-area: na;
+    background: green;
+}
+
+.innerGridwrapper {
+    grid-area: se;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 2px;    
+}
+
+.innerDiv {
+    background: orange;
+}
+
+.article1 {
+    grid-area: a1;
+    background: navy;
+}
+
+.aside {
+    grid-area: as;
+    background: paleturquoise;
+}
+
+.footer {
+    grid-area: fo;
+    background: rebeccapurple;
+}
+
+h5 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    margin: 3px;
+}
